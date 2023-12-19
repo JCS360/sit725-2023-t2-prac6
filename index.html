@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Locate a Socket - EV Charge</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Locate a Socket</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#findevpoint">Find EV ChargePoint</a></li>
+        <li><a href="#loginsignup">Login & SignUp</a></li>
+        <li><a href="#setchangevehicle">Set or Change Vehicle</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#findevpoint">Find EV ChargePoint</a></li>
+        <li><a href="#loginsignup">Login & SignUp</a></li>
+        <li><a href="#setchangevehicle">Set or Change Vehicle</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Search, Secure, Charge</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Find an EV ChargePoint in real time anywhere on our growing EV network</h5>
+        </div>
+        <div class="row center">
+          <a href="#findevpoint" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 1" class="responsive-img"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 id="findevpoint" class="center brown-text"><i class="material-icons">battery_charging_full</i></h2>
+            <h5 class="center">Find an EV Chargepoint</h5>
+
+            <p class="light">Find Vacant EV Chargepoint Spaces Near your Route in Real time.</p>
+
+            <!-- Modal Trigger -->
+            <a href="#modal1" class="btn-large waves-effect waves-light teal lighten-1 modal-trigger">Find EV ChargePoint</a>
+
+            <!-- Modal Structure -->
+            <div class="modal" id="modal1" >
+                <div class="modal-content">
+                <h4>Find EV Chargepoint</h4>
+                <p>Complete the Journey Start & Destination locations to update map.</p>
+                  
+            <div class="row">
+              <form class="col s12">
+ 
+               
+
+ 
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="journey_start_address" type="text" class="validate">
+                    <label for="journey_start_address">Journey Start Address</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="journey_end_address" type="email" class="validate">
+                    <label for="journey_end_address">Journey End Address</label>
+                  </div>
+                </div>
+                
+                
+ 
+              </form>
+            </div>
+
+                <p>Planned Journey Routes</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d863045.7278131708!2d115.26345592905808!3d-32.33139669590657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x2a32966cdb47733d%3A0x304f0b535df55d0!2sPerth%20WA!3m2!1d-31.9523123!2d115.86130899999999!4m5!1s0x2a323fa33682d7eb%3A0xcee45a0afef9b64c!2sDwellingup%20WA!3m2!1d-32.7144812!2d116.0621031!5e0!3m2!1sen!2sau!4v1701265866745!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+              <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Dismiss</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 id="loginsignup" class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Drivers Login & SignUp</h5>
+            
+            <p class="light">Stay up to date with all the new stations added to our growing network.</p>
+
+            <!-- Modal Trigger -->
+            <a href="#modal2" class="btn-large waves-effect waves-light teal lighten-1 modal-trigger">Drivers Login/SignUp</a>
+
+                      <!-- Modal Structure -->
+           <div class="modal" id="modal2" >
+            <div class="modal-content">
+            <h4>Driver Login</h4>
+
+
+            <div class="row">
+             <form class="col s12">
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="drivers_email" type="text" class="validate">
+                  <label for="drivers_email">Driver Email Address</label>
+               </div>
+               <div class="input-field col s6">
+                  <input id="password" type="text" class="validate">
+                  <label for="password">Password</label>
+                </div>
+              </div> 
+
+
+               <h4>Driver Sign Up</h4>
+
+               <div class="row">
+                 <div class="input-field col s6">
+                   <input id="first_name" type="text" class="validate">
+                   <label for="first_name">Contact First Name</label>
+                 </div>
+                 <div class="input-field col s6">
+                   <input id="last_name" type="text" class="validate">
+                   <label for="last_name">Contact Last Name</label>
+                 </div>
+               </div>
+
+               
+
+               <div class="row">
+                 <div class="input-field col s12">
+                   <input id="mobile_telephone" type="text" class="validate">
+                   <label for="mobile_telephone">Mobile Telephone Number</label>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="input-field col s12">
+                   <input id="email" type="email" class="validate">
+                   <label for="email">Email</label>
+                 </div>
+               </div>
+               
+               <div class="row">
+                 <div class="input-field col s12">
+                   <input id="drivers_address" type="text" class="validate">
+                   <label for="drivers_address">Drivers Address</label>
+                 </div>
+               </div>
+               
+
+             </form>
+           </div>
+
+
+
+            </div>
+          <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Submit</a>
+          </div>
+        </div>
+
+
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 id="setchangevehicle" class="center brown-text"><i class="material-icons">directions_car</i></h2>
+            <h5 class="center">Set or Change Vehicle</h5>
+            <p class="light">All Makes and Model can register vehicle for a seamless and faster charging experience for your vehicle.</p>
+          <!-- Modal Trigger -->
+          <a href="#modal3" class="btn-large waves-effect waves-light teal lighten-1 modal-trigger">Set or Update Vehicle</a>
+
+          <!-- Modal Structure -->
+           <div class="modal" id="modal3" >
+               <div class="modal-content">
+               <h4>Set or Update Vehicle Details</h4>
+               <p>Setting and updating your vehicle details enables us to locate the most accurate EV ChargePoint.</p>
+
+
+               <div class="row">
+                <form class="col s12">
+
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="vehicle_make" type="text" class="validate">
+                      <label for="vehicle_make">Vehicle Make  Name</label>
+                    </div>
+                  </div> 
+
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="vehicle_model" type="text" class="validate">
+                      <label for="vehicle_model">Vehicle Model</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="vehicle_year" type="text" class="validate">
+                      <label for="vehicle_year">Vehicle Year</label>
+                    </div>
+                  </div>
+
+                  
+
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="vehicle_rego" type="text" class="validate">
+                      <label for="vehicle_rego">Vehicle Rego</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="driversers_email" type="email" class="validate">
+                      <label for="drivers_email">Drivers Email</label>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="Drivers_telephone" type="text" class="validate">
+                      <label for="Drivers_telephone">Drivers Telephone</label>
+                    </div>
+                  </div>
+                  
+
+                </form>
+              </div>
+
+
+
+               </div>
+             <div class="modal-footer">
+           <a href="#!" class="modal-close waves-effect waves-green btn-flat">Submit</a>
+             </div>
+           </div>
+
+
+
+
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Bringing EV Chargers and Drivers Together</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 2" class="responsive-img"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4 id="chargingnetwork">About Our Charging Network</h4>
+          <p class="left-align light">Growing the EV Chargepoint network is a key step towards a more sustainable and environmentally friendly future. A larger network means more EV Charging Stations, making it easier for drivers to find a charging point when needed, reducing 'range anxiety'- the fear that an electric vehicle has insufficient range to reach its destination. Supporting strategically located charging stations provide easy access for EV owners, making both long-distance and charging on-to-go a hassle-free experience anywhere.</p>
+          
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn click-me-button modal-trigger" id="clickMeButton" data-target="modal5"><i class="material-icons left">auto_fix_high</i>EV Service Provider Sign Up</a>
+
+            <!-- Start Modal5 Structure -->
+            <div id="modal5" class="modal modal-fixed-footer">
+				<div class="row modal-content">
+
+                    <h4>EV Service Provider Sign Up</h4>
+                    <p>Contact us today, to put your EV ChargePoint Capacity on the Map!.</p>
+
+					<form class="col s12">
+
+                        <div class="row">
+                        <div class="input-field col s12">
+                            <input id="businessname" type="text" class="validate">
+                            <label for="businessname">Business Name</label>
+                        </div>
+                        </div> 
+
+                        <div class="row">
+                        <div class="input-field col s6">
+                            <input id="businesssuburb" type="text" class="validate">
+                            <label for="businesssuburb">Business Suburb</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="businessstate" type="text" class="validate">
+                            <label for="businessstate">Business State</label>
+                        </div>
+                        </div>
+
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="path" type="text" class="validate">
+								<label for="path">ChargePoint Photo Path</label>
+							</div>
+                        </div>
+
+                        <div class="row">
+                        <div class="input-field col s12">
+                            <input id="chargertypes" type="text" class="validate">
+                            <label for="chargertypes">Charger Types</label>
+                        </div>
+                        </div>
+
+                        <div class="row">
+                        <div class="input-field col s12">
+                            <input id="additionalservices" type="text" class="validate">
+                            <label for="additionalservices">Additional Services</label>
+                        </div>
+                        </div>
+                        
+                        <div class="row">
+                        <div class="input-field col s12">
+                            <input id="localityamenities" type="text" class="validate">
+                            <label for="localityamenities">Localty Amenities</label>
+                        </div>
+                        </div>
+
+                        <div class="row">
+							<div class="input-field col s12 center-align">
+								<a class="waves-effect waves-light btn" id="formSubmit">submit</a>
+							</div>
+						</div>
+
+					</form>
+				</div>
+
+			</div>
+            <!-- End Modal5 Structure -->
+         
+
+        </div>
+      </div>
+
+      
+ 
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Find an EV ChargePoint in real time anywhere on our growing EV network.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background3.jpg" alt="Unsplashed background img 3" class="responsive-img"></div>
+  </div>
+
+
+<!-- End of Pallax Container  -->
+<h4 class="center" id="chargingnetwork">Meet the EV ChargePoint Locations growing our Network</h4>
+ <!-- New Service Provider Cards Section  -->
+
+<div class="container">
+  <div class="carousel center">
+    <a class="carousel-item" href="#one!"><img src="images/evchargepoint1.jpg"> </a>
+    <a class="carousel-item" href="#two!"><img src="images/evchargepoint2.jpg"> </a>
+    <a class="carousel-item" href="#three!"><img src="images/evchargepoint3.jpg"> </a>
+  </div>
+
+
+  </div>
+
+  <!-- Footer  -->
+  <footer class="page-footer teal">
+    <!-- Footer content -->
+  </footer>
+
+  <!--  Scripts-->
+ 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="scripts.js"></script>
+
+  </body>
+</html>
